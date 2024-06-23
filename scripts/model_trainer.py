@@ -33,21 +33,10 @@ def train_and_evaluate_classifiers(data_path):
         fpr, tpr, _ = roc_curve(y_test, y_proba)
         roc_auc = auc(fpr, tpr)
 
-        # Prediciona rótulos
-        y_pred = clf.predict(X_test)
-
-        # Calcula métricas de desempenho
-        accuracy = accuracy_score(y_test, y_pred)
-        precision = precision_score(y_test, y_pred)
-        recall = recall_score(y_test, y_pred)
-        
         results[name] = {
             'fpr': fpr,
             'tpr': tpr,
-            'auc': roc_auc,
-            'accuracy': accuracy,
-            'precision': precision,
-            'recall': recall
+            'auc': roc_auc
         }
 
     return results

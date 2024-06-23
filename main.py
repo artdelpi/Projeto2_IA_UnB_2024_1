@@ -17,7 +17,7 @@ def main():
         print(f"{name}: AUC = {result['auc']:.2f}")
 
     # Lança as curvas ROC e salva imagem
-    plot_roc_curves(results, 'roc_curves.png')
+    plot_roc_curves(results, 'Projeto2_IA_UnB_2024_1/roc_curves.png')
 
 if __name__ == '__main__':
     main()
