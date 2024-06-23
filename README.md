@@ -1,5 +1,8 @@
 # Projeto2_IA_UnB_2024_1
 
+- **Aluno**: Arthur Delpino Barbabella
+- **Matrícula**: 221002094
+
 - **Link do repositório no GitHub**: https://github.com/artdelpi/Projeto2_IA_UnB_2024_1.git
 
 ## Algoritmos de Aprendizagem Supervisionada para Classificação de Textos Gerados por IA ou Humanos
@@ -26,7 +29,7 @@ Este projeto visa analisar os resultados obtidos na classificação de dados ger
 - **SVM (AUC = 1.00)**
 - **Random Forest (AUC = 1.00)**
 
-![Gráfico da Curva ROC](Projeto2_IA_UnB_2024_1/results/roc_curves.png)
+![Gráfico da Curva ROC](results/roc_curves.png)
 
 ### Métricas Utilizadas
 
@@ -54,9 +57,9 @@ Por extensão, uma linha reta não é tão eficiente para separar os dados de di
 Ao executar o arquivo main.py, os dados serão:
 1. Pré-processados (data_parser.py),
 2. Modelos serão treinados e AUC e ROC obtidos (model_trainer.py)
-3. Imagem da curva ROC será plotada (model_evaluator.py) 
+3. Imagem da curva ROC será plotada e salva em /results (model_evaluator.py) 
 
-- **Obs**: Espera-se que ao executar a main.py, seja gerada a imagem "roc_curves.png", caso seja excluida, e que os scores AUC de cada modelo seja impresso no painel de OUTPUT.
+- **Obs**: Espera-se que ao executar a main.py, seja gerada a imagem "roc_curves.png" em /results, caso seja excluida, e que os scores AUC de cada modelo sejam impressos no painel de OUTPUT.
 
 ### Como Rodar o Projeto
 
