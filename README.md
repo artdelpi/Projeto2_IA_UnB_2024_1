@@ -1,5 +1,7 @@
 # Projeto2_IA_UnB_2024_1
 
+- **Link do repositório no GitHub**: https://github.com/artdelpi/Projeto2_IA_UnB_2024_1.git
+
 ## Algoritmos de Aprendizagem Supervisionada para Classificação de Textos Gerados por IA ou Humanos
 
 Este projeto visa analisar os resultados obtidos na classificação de dados gerados por IA ou humanos, ao utilizar diferentes algoritmos de classificação supervisionada (LDA, QDA, KNN, SVM e Random Forest).
@@ -22,9 +24,9 @@ Este projeto visa analisar os resultados obtidos na classificação de dados ger
 - **QDA (AUC = 0.84)**
 - **KNN (AUC = 0.99)**
 - **SVM (AUC = 1.00)**
-- **Random Forest = (AUC = 1.00)**
+- **Random Forest (AUC = 1.00)**
 
-![Gráfico da Curva ROC](roc_curves.png)
+![Gráfico da Curva ROC](Projeto2_IA_UnB_2024_1/results/roc_curves.png)
 
 ### Métricas Utilizadas
 
@@ -41,7 +43,7 @@ Os modelos KNN, SVM e Random Forest apresentaram o melhor desempenho de classifi
 Os motivos por trás da perfomance do KNN, SVM e Random Forest são:
 
 1. Não-linearidade dos dados: Problemas que envolvem texto tendem a ter natureza não-linear ao serem vetorizados usando TF-IDF.
-    .TF-IDF (Term Frequency-Inverse Document Frequency): É uma técnica de vetorização de texto que transforma textos em números. Busca destacar palavras importantes e reduzir a importância de palavras comuns.
+    - **TF-IDF (Term Frequency-Inverse Document Frequency)**: É uma técnica de vetorização de texto que transforma textos em números. Busca destacar palavras importantes e reduzir a importância de palavras comuns.
 
 2. Complexidade dos textos: O conteúdo de cada entrada a ser classificada pode envolver grande quantidade de características/nuances, que fazem com que o texto de IA e humano sejam diferentes em várias dimensões, favorecendo os modelos não-lineares. 
 
